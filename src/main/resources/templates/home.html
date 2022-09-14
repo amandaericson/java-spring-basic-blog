@@ -7,7 +7,9 @@
 </head>
 
 <body>
-    <h2 th:text="${title}"></h2>
+    <div th:each="entry : ${posts}">
+        <h2 th:text="${entry.getTitle()}"></h2>
+    </div>
 </body>
 
 </html>
